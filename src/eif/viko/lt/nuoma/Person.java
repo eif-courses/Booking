@@ -1,0 +1,40 @@
+package eif.viko.lt.nuoma;
+
+public abstract class Person {
+  private int id;
+  private int age;
+  private String name;
+
+  public Person(int id, int age, String name) {
+    this.id = id;
+    this.age = age;
+    this.name = name;
+  }
+
+  public abstract double salary();
+
+  public int getId() {
+    return id;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  @Override
+  public String toString() {
+    return "Person{" +
+        "id=" + id +
+        ", age=" + age +
+        ", name='" + name + '\'' +
+        '}';
+  }
+}
